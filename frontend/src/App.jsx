@@ -33,7 +33,7 @@ function App() {
 
     try {
       const res = await axios.post(
-        "http://127.0.0.1:5000/predict",
+        "https://house-price-api-7f6w.onrender.com/predict",
         form
       );
       setPrice(res.data.predicted_price);
